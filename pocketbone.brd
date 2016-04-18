@@ -1140,11 +1140,11 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C3" library="Strawson_Eagle_Lib" package="0402-CAP" value="0.1uF" x="22.3812" y="6.669340625" rot="R180"/>
 <element name="C11" library="Strawson_Eagle_Lib" package="0402-CAP" value="0.1uF" x="10.5156" y="21.4884" rot="R180"/>
 <element name="C10" library="Strawson_Eagle_Lib" package="0805" value="10uF" x="12.4968" y="24.6888"/>
-<element name="D1" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="30.77" y="32.78"/>
-<element name="D2" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="32.96" y="32.78"/>
-<element name="D3" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="35.531" y="33.0086"/>
-<element name="D4" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="25.9948" y="32.9842" rot="R180"/>
-<element name="D5" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="39.6434" y="32.8744" rot="R180"/>
+<element name="USR0" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="30.77" y="32.78"/>
+<element name="USR1" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="32.96" y="32.78"/>
+<element name="USR2" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="35.531" y="33.0086"/>
+<element name="USR3" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="25.9948" y="32.9842" rot="R180"/>
+<element name="PWR" library="BeagleBone_Blue" package="LED-0603" value="BLUE" x="39.6434" y="32.8744" rot="R180"/>
 <element name="J1" library="pocketbone" package="MICRO-SD-SOCKET-PP" value="USD_CONNECTOR" x="6.7098" y="15.9898" rot="R180">
 <attribute name="PROD_ID" value="CONN-07820" x="6.7098" y="15.9898" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -1210,15 +1210,15 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="JP2" library="pocketbone" package="USB-AB-MICRO-SMD" value="USB-MICRO-SMD" x="2.09" y="12.1372"/>
 <element name="JP1" library="pocketbone" package="USB-AB-MICRO-SMD" value="USB-MICRO-SMD" x="2.134" y="23.0042"/>
-<element name="Y2" library="pocketbone" package="CM200C-32.768KAZF-UT" value="CM200C-32.768KAZF-UT" x="15.999" y="15.658"/>
-<element name="Y1" library="pocketbone" package="445C33D24M00000" value="445C33D24M00000" x="25.1948" y="9.636" rot="R90"/>
+<element name="Y1" library="pocketbone" package="CM200C-32.768KAZF-UT" value="CM200C-32.768KAZF-UT" x="15.999" y="15.658"/>
+<element name="Y2" library="pocketbone" package="445C33D24M00000" value="445C33D24M00000" x="25.1948" y="9.636" rot="R90"/>
 <element name="TP3" library="testpad" package="B1,27" value="TPSQB1,27" x="4.191" y="4.4958">
 <attribute name="TP_SIGNAL_NAME" value="GND" x="4.191" y="4.4958" size="1.778" layer="27" display="off"/>
 </element>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2SMD-1101NE" x="11.2014" y="32.004">
+<element name="POWER" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2SMD-1101NE" x="11.2014" y="32.004">
 <attribute name="PROD_ID" value="SWCH-00815" x="11.2014" y="32.004" size="1.778" layer="27" display="off"/>
 </element>
-<element name="S2" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2SMD-1101NE" x="20.1168" y="32.004">
+<element name="RESET" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2SMD-1101NE" x="20.1168" y="32.004">
 <attribute name="PROD_ID" value="SWCH-00815" x="20.1168" y="32.004" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
@@ -1263,7 +1263,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PWR">
 <contactref element="U2" pad="D20"/>
-<contactref element="S1" pad="2"/>
+<contactref element="POWER" pad="2"/>
 <wire x1="26.0444" y1="9.3632" x2="14.3514" y2="32.004" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C0_SCL">
@@ -1313,11 +1313,11 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="VDD_3V3AUX">
 <contactref element="U2" pad="Y11"/>
-<contactref element="D5" pad="A"/>
+<contactref element="PWR" pad="A"/>
 <wire x1="37.4744" y1="29.6832" x2="39.6434" y2="33.7514" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWR_LEDR">
-<contactref element="D5" pad="C"/>
+<contactref element="PWR" pad="C"/>
 <contactref element="R9" pad="1"/>
 <wire x1="39.6434" y1="31.9974" x2="41.184259375" y2="33.5572" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1372,8 +1372,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U2" pad="Y18"/>
 <contactref element="R29" pad="2"/>
 <contactref element="TP3" pad="TP"/>
-<contactref element="S2" pad="1"/>
-<contactref element="S1" pad="1"/>
+<contactref element="RESET" pad="1"/>
+<contactref element="POWER" pad="1"/>
 <polygon width="0.1524" layer="16">
 <vertex x="10" y="0"/>
 <vertex x="5" y="0"/>
@@ -1469,7 +1469,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.3144" y1="6.8232" x2="28.5844" y2="6.8232" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26">
-<contactref element="Y2" pad="2"/>
+<contactref element="Y1" pad="2"/>
 <contactref element="C7" pad="1"/>
 <contactref element="U2" pad="M20"/>
 <wire x1="17.269" y1="21.398" x2="19.9786" y2="21.398" width="0.1524" layer="1"/>
@@ -1481,7 +1481,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$27">
 <contactref element="U2" pad="K20"/>
-<contactref element="Y2" pad="1"/>
+<contactref element="Y1" pad="1"/>
 <contactref element="C5" pad="1"/>
 <wire x1="26.0444" y1="16.9832" x2="24.0792" y2="19.4818" width="0.1524" layer="1"/>
 <wire x1="24.0792" y1="19.4818" x2="24.0792" y2="19.5072" width="0.1524" layer="1"/>
@@ -1509,7 +1509,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$32">
 <contactref element="U2" pad="H20"/>
 <contactref element="C6" pad="1"/>
-<contactref element="Y1" pad="2"/>
+<contactref element="Y2" pad="2"/>
 <wire x1="26.0444" y1="14.4432" x2="22.9176" y2="14.4432" width="0.1524" layer="1"/>
 <wire x1="22.9176" y1="14.4432" x2="22.6548" y2="14.706" width="0.1524" layer="1"/>
 <wire x1="22.6548" y1="14.706" x2="23.0924" y2="16.499140625" width="0" layer="19" extent="1-1"/>
@@ -1517,7 +1517,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$33">
 <contactref element="U2" pad="F20"/>
 <contactref element="C4" pad="2"/>
-<contactref element="Y1" pad="1"/>
+<contactref element="Y2" pad="1"/>
 <wire x1="22.6548" y1="10.906" x2="25.0472" y2="10.906" width="0.1524" layer="1"/>
 <wire x1="25.0472" y1="10.906" x2="26.0444" y2="11.9032" width="0.1524" layer="1"/>
 <wire x1="22.6548" y1="10.906" x2="23.1864" y2="9.027859375" width="0" layer="19" extent="1-1"/>
@@ -1539,7 +1539,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R10" pad="1"/>
 <contactref element="C9" pad="1"/>
 <contactref element="U3" pad="4"/>
-<contactref element="S2" pad="2"/>
+<contactref element="RESET" pad="2"/>
 <wire x1="22.526" y1="26.096659375" x2="23.2668" y2="32.004" width="0" layer="19" extent="1-1"/>
 <wire x1="38.7444" y1="5.5532" x2="22.526" y2="26.096659375" width="0" layer="19" extent="1-1"/>
 <wire x1="33.156" y1="1.7678125" x2="38.7444" y2="5.5532" width="0" layer="19" extent="1-1"/>
@@ -1552,41 +1552,41 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$43">
 <contactref element="U2" pad="V16"/>
-<contactref element="D4" pad="A"/>
+<contactref element="USR3" pad="A"/>
 <wire x1="31.1244" y1="27.1432" x2="25.9948" y2="33.8612" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$44">
 <contactref element="U2" pad="T15"/>
-<contactref element="D3" pad="A"/>
+<contactref element="USR2" pad="A"/>
 <wire x1="32.3944" y1="24.6032" x2="35.531" y2="32.1316" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$45">
 <contactref element="U2" pad="U15"/>
-<contactref element="D2" pad="A"/>
+<contactref element="USR1" pad="A"/>
 <wire x1="32.3944" y1="25.8732" x2="32.96" y2="31.903" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$46">
 <contactref element="U2" pad="V15"/>
-<contactref element="D1" pad="A"/>
+<contactref element="USR0" pad="A"/>
 <wire x1="32.3944" y1="27.1432" x2="30.77" y2="31.903" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$47">
-<contactref element="D1" pad="C"/>
+<contactref element="USR0" pad="C"/>
 <contactref element="R1" pad="2"/>
 <wire x1="28.6474" y1="33.716659375" x2="30.77" y2="33.657" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$57">
-<contactref element="D2" pad="C"/>
+<contactref element="USR1" pad="C"/>
 <contactref element="R2" pad="2"/>
 <wire x1="28.9268" y1="32.116459375" x2="32.96" y2="33.657" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$58">
-<contactref element="D3" pad="C"/>
+<contactref element="USR2" pad="C"/>
 <contactref element="R3" pad="2"/>
 <wire x1="35.531" y1="33.8856" x2="38.1978" y2="33.792859375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$59">
-<contactref element="D4" pad="C"/>
+<contactref element="USR3" pad="C"/>
 <contactref element="R4" pad="2"/>
 <wire x1="25.9948" y1="32.1072" x2="38.401" y2="32.268859375" width="0" layer="19" extent="1-1"/>
 </signal>

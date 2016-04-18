@@ -4019,7 +4019,7 @@ Renamed DAT2 from NC to RSV to remove the implication that you should leave it n
 <wire x1="2.794" y1="2.54" x2="2.794" y2="-2.54" width="0.4064" layer="94"/>
 <pin name="1" x="0" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
 <pin name="2" x="10.16" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<text x="2.54" y="3.81" size="1.778" layer="95">Y1</text>
+<text x="2.54" y="3.81" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="445C33D24M00000">
@@ -4032,6 +4032,7 @@ Renamed DAT2 from NC to RSV to remove the implication that you should leave it n
 <pin name="1" x="0" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
 <pin name="2" x="10.16" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4651,10 +4652,10 @@ NOTE: CD1 and CD2 are connected internally</description>
 </part>
 <part name="R5" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="1.5K,1%"/>
 <part name="R6" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="1.5K,1%"/>
-<part name="D5" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
+<part name="PWR" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
 <part name="R9" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="4.87k"/>
 <part name="C8" library="Strawson_Eagle_Lib" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="Y2" library="pocketbone" deviceset="CM200C-32.768KAZF-UT" device=""/>
+<part name="Y1" library="pocketbone" deviceset="CM200C-32.768KAZF-UT" device=""/>
 <part name="U1" library="pocketbone" deviceset="24LC_" device="" technology="32AT-I/OT"/>
 <part name="R7" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="1.5K,1%"/>
 <part name="TP4" library="testpad" deviceset="TPSQ" device="B1,27">
@@ -4663,16 +4664,16 @@ NOTE: CD1 and CD2 are connected internally</description>
 <part name="C1" library="Strawson_Eagle_Lib" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="C5" library="Strawson_Eagle_Lib" deviceset="CAP" device="0402-CAP" value="20pF"/>
 <part name="C7" library="Strawson_Eagle_Lib" deviceset="CAP" device="0402-CAP" value="20pF"/>
-<part name="Y1" library="pocketbone" deviceset="445C33D24M00000" device=""/>
+<part name="Y2" library="pocketbone" deviceset="445C33D24M00000" device=""/>
 <part name="C6" library="Strawson_Eagle_Lib" deviceset="CAP" device="0402-CAP" value="20pF"/>
 <part name="C4" library="Strawson_Eagle_Lib" deviceset="CAP" device="0402-CAP" value="20pF"/>
 <part name="R8" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="4.87k"/>
 <part name="C9" library="Strawson_Eagle_Lib" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="R10" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="10K,1%"/>
-<part name="D1" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
-<part name="D2" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
-<part name="D3" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
-<part name="D4" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
+<part name="USR0" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
+<part name="USR1" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
+<part name="USR2" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
+<part name="USR3" library="BeagleBone_Blue" deviceset="LED" device="0603" value="BLUE"/>
 <part name="R1" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="240"/>
 <part name="R2" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="240"/>
 <part name="R3" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="240"/>
@@ -4715,8 +4716,8 @@ NOTE: CD1 and CD2 are connected internally</description>
 <part name="TP3" library="testpad" deviceset="TPSQ" device="B1,27">
 <attribute name="TP_SIGNAL_NAME" value="GND"/>
 </part>
-<part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
-<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
+<part name="POWER" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
+<part name="RESET" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
 </parts>
 <sheets>
 <sheet>
@@ -4728,38 +4729,38 @@ NOTE: CD1 and CD2 are connected internally</description>
 <instance part="TP1" gate="G$1" x="137.16" y="243.84" rot="R90"/>
 <instance part="R5" gate="G$1" x="38.1" y="198.12" rot="R90"/>
 <instance part="R6" gate="G$1" x="48.26" y="198.12" rot="R90"/>
-<instance part="D5" gate="G$1" x="160.02" y="233.68" rot="R90"/>
+<instance part="PWR" gate="G$1" x="160.02" y="233.68" rot="R90"/>
 <instance part="R9" gate="G$1" x="193.04" y="233.68"/>
 <instance part="C8" gate="G$1" x="180.34" y="243.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="177.419" y="245.364" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="182.499" y="245.364" size="1.778" layer="96"/>
 </instance>
-<instance part="Y2" gate="G$1" x="124.46" y="157.48"/>
+<instance part="Y1" gate="G$1" x="124.46" y="157.48"/>
 <instance part="U1" gate="A" x="63.5" y="165.1"/>
 <instance part="R7" gate="G$1" x="50.8" y="157.48" rot="R180"/>
 <instance part="TP4" gate="G$1" x="40.64" y="154.94" rot="R270"/>
 <instance part="C1" gate="G$1" x="17.78" y="154.94"/>
 <instance part="C5" gate="G$1" x="116.84" y="157.48" rot="R270"/>
 <instance part="C7" gate="G$1" x="142.24" y="157.48" rot="R90"/>
-<instance part="Y1" gate="G$1" x="101.6" y="116.84"/>
+<instance part="Y2" gate="G$1" x="101.6" y="116.84"/>
 <instance part="C6" gate="G$1" x="119.38" y="116.84" rot="R90"/>
 <instance part="C4" gate="G$1" x="96.52" y="116.84" rot="R90"/>
 <instance part="R8" gate="G$1" x="81.28" y="114.3"/>
 <instance part="C9" gate="G$1" x="274.32" y="226.06"/>
 <instance part="R10" gate="G$1" x="274.32" y="241.3" rot="R90"/>
-<instance part="D1" gate="G$1" x="53.34" y="106.68" smashed="yes" rot="R270">
+<instance part="USR0" gate="G$1" x="53.34" y="106.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="58.928" y="105.664" size="1.778" layer="95"/>
 <attribute name="VALUE" x="66.548" y="106.045" size="1.778" layer="96"/>
 </instance>
-<instance part="D2" gate="G$1" x="53.34" y="104.14" smashed="yes" rot="R270">
+<instance part="USR1" gate="G$1" x="53.34" y="104.14" smashed="yes" rot="R270">
 <attribute name="NAME" x="58.928" y="103.124" size="1.778" layer="95"/>
 <attribute name="VALUE" x="66.548" y="103.505" size="1.778" layer="96"/>
 </instance>
-<instance part="D3" gate="G$1" x="53.34" y="101.6" smashed="yes" rot="R270">
+<instance part="USR2" gate="G$1" x="53.34" y="101.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="58.928" y="100.584" size="1.778" layer="95"/>
 <attribute name="VALUE" x="66.548" y="100.965" size="1.778" layer="96"/>
 </instance>
-<instance part="D4" gate="G$1" x="53.34" y="99.06" smashed="yes" rot="R270">
+<instance part="USR3" gate="G$1" x="53.34" y="99.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="58.928" y="98.044" size="1.778" layer="95"/>
 <attribute name="VALUE" x="66.548" y="98.425" size="1.778" layer="96"/>
 </instance>
@@ -4788,8 +4789,8 @@ NOTE: CD1 and CD2 are connected internally</description>
 <attribute name="TP_SIGNAL_NAME" x="30.48" y="241.3" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="TP3" gate="G$1" x="200.66" y="248.92" rot="R180"/>
-<instance part="S1" gate="G$1" x="27.94" y="215.9"/>
-<instance part="S2" gate="G$1" x="281.94" y="208.28"/>
+<instance part="POWER" gate="G$1" x="27.94" y="215.9"/>
+<instance part="RESET" gate="G$1" x="281.94" y="208.28"/>
 </instances>
 <busses>
 </busses>
@@ -4848,7 +4849,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <net name="PWR" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="PMIC_IN_PB_IN"/>
-<pinref part="S1" gate="G$1" pin="2"/>
+<pinref part="POWER" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="215.9" x2="66.04" y2="215.9" width="0.1524" layer="91"/>
 <label x="40.64" y="215.9" size="1.778" layer="95"/>
 </segment>
@@ -4946,12 +4947,12 @@ NOTE: CD1 and CD2 are connected internally</description>
 <pinref part="U2" gate="A" pin="VOUT_LDO2_3P3V"/>
 <wire x1="124.46" y1="233.68" x2="157.48" y2="233.68" width="0.1524" layer="91"/>
 <label x="139.7" y="233.68" size="1.778" layer="95"/>
-<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="PWR" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="PWR_LEDR" class="0">
 <segment>
-<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="233.68" x2="187.96" y2="233.68" width="0.1524" layer="91"/>
 <label x="167.64" y="233.68" size="1.778" layer="95"/>
@@ -5033,12 +5034,12 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="256.54" y1="231.14" x2="251.46" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="1"/>
+<pinref part="RESET" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="208.28" x2="266.7" y2="208.28" width="0.1524" layer="91"/>
 <label x="266.7" y="208.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="1"/>
+<pinref part="POWER" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="215.9" x2="12.7" y2="215.9" width="0.1524" layer="91"/>
 <label x="12.7" y="215.9" size="1.778" layer="95"/>
 </segment>
@@ -5103,7 +5104,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="Y2" gate="G$1" pin="2"/>
+<pinref part="Y1" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="157.48" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
@@ -5117,7 +5118,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <pinref part="U2" gate="B" pin="OSC0_OUT"/>
 <wire x1="149.86" y1="144.78" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="144.78" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="Y2" gate="G$1" pin="1"/>
+<pinref part="Y1" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <junction x="121.92" y="157.48"/>
@@ -5153,7 +5154,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="137.16" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="137.16" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="2"/>
+<pinref part="Y2" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="116.84" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 <junction x="114.3" y="116.84"/>
 </segment>
@@ -5164,7 +5165,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="134.62" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="1"/>
+<pinref part="Y2" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="116.84" x2="101.6" y2="116.84" width="0.1524" layer="91"/>
 <junction x="99.06" y="116.84"/>
 </segment>
@@ -5209,7 +5210,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="213.36" y1="220.98" x2="292.1" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="220.98" x2="292.1" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="Y"/>
-<pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="RESET" gate="G$1" pin="2"/>
 <wire x1="287.02" y1="208.28" x2="292.1" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="208.28" x2="292.1" y2="220.98" width="0.1524" layer="91"/>
 <junction x="292.1" y="220.98"/>
@@ -5225,55 +5226,55 @@ NOTE: CD1 and CD2 are connected internally</description>
 <net name="N$43" class="0">
 <segment>
 <pinref part="U2" gate="B" pin="USR3_V16"/>
-<pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="USR3" gate="G$1" pin="A"/>
 <wire x1="149.86" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="U2" gate="B" pin="USR2_T15"/>
-<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="USR2" gate="G$1" pin="A"/>
 <wire x1="149.86" y1="101.6" x2="55.88" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
 <pinref part="U2" gate="B" pin="USR1_U15"/>
-<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="USR1" gate="G$1" pin="A"/>
 <wire x1="149.86" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="U2" gate="B" pin="USR0_V15"/>
-<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="USR0" gate="G$1" pin="A"/>
 <wire x1="149.86" y1="106.68" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="USR0" gate="G$1" pin="C"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="106.68" x2="27.94" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$57" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="USR1" gate="G$1" pin="C"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="104.14" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$58" class="0">
 <segment>
-<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="USR2" gate="G$1" pin="C"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="101.6" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$59" class="0">
 <segment>
-<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="USR3" gate="G$1" pin="C"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="99.06" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
 </segment>
