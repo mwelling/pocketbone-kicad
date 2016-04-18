@@ -4618,17 +4618,17 @@ NOTE: CD1 and CD2 are connected internally</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.127" drill="0.254">
-<clearance class="0" value="0.127"/>
+<class number="0" name="default" width="0.1524" drill="0.3302">
+<clearance class="0" value="0.1524"/>
 </class>
-<class number="1" name="ground" width="0.3048" drill="0.254">
-<clearance class="1" value="0.127"/>
+<class number="1" name="ground" width="0.3302" drill="0.3302">
+<clearance class="1" value="0.1524"/>
 </class>
-<class number="2" name="usb" width="0.127" drill="0">
-<clearance class="2" value="0.127"/>
+<class number="2" name="usb" width="0.1524" drill="0">
+<clearance class="2" value="0.1524"/>
 </class>
-<class number="3" name="power" width="0.3048" drill="0.254">
-<clearance class="3" value="0.127"/>
+<class number="3" name="power" width="0.3302" drill="0.3302">
+<clearance class="3" value="0.1524"/>
 </class>
 </classes>
 <parts>
@@ -5734,7 +5734,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <label x="96.52" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$129" class="0">
+<net name="N$129" class="3">
 <segment>
 <pinref part="U2" gate="C" pin="USB1_VBUS"/>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -5812,7 +5812,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <label x="195.58" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="N$1" class="3">
 <segment>
 <pinref part="L1" gate="L" pin="2"/>
 <pinref part="USB1" gate="G$1" pin="VBUS"/>
