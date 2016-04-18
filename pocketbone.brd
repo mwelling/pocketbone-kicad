@@ -1700,12 +1700,26 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="USB0_DP" class="2">
 <contactref element="U2" pad="N17"/>
 <contactref element="USB0" pad="D+"/>
-<wire x1="22.745" y1="19.675" x2="50.15" y2="23" width="0" layer="19" extent="1-1"/>
+<wire x1="22.745" y1="19.675" x2="22.745" y2="19.705" width="0.1524" layer="1"/>
+<wire x1="23.5" y1="20.465" x2="45.15" y2="20.465" width="0.1524" layer="1"/>
+<wire x1="22.745" y1="19.675" x2="22.745" y2="19.595" width="0.1524" layer="1"/>
+<wire x1="23.2" y1="19.2" x2="23.2" y2="20.065" width="0.1524" layer="1"/>
+<wire x1="23.2" y1="20.065" x2="23.5" y2="20.465" width="0.1524" layer="1"/>
+<wire x1="23.2" y1="19.2" x2="22.35" y2="19.2" width="0.1524" layer="1"/>
+<wire x1="22.35" y1="19.2" x2="22.745" y2="19.675" width="0.1524" layer="1"/>
+<wire x1="45.15" y1="20.465" x2="49.45" y2="23" width="0.1524" layer="1"/>
+<wire x1="49.45" y1="23" x2="50.15" y2="23" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB0_DM" class="2">
 <contactref element="U2" pad="N18"/>
 <contactref element="USB0" pad="D-"/>
-<wire x1="21.475" y1="19.675" x2="50.15" y2="22.35" width="0" layer="19" extent="1-1"/>
+<wire x1="23.65" y1="20.154" x2="45.35" y2="20.154" width="0.1524" layer="1"/>
+<wire x1="45.35" y1="20.154" x2="49.4" y2="22.35" width="0.1524" layer="1"/>
+<wire x1="23.65" y1="20.154" x2="23.53" y2="19.85" width="0.1524" layer="1"/>
+<wire x1="23.53" y1="19.85" x2="23.53" y2="18.89" width="0.1524" layer="1"/>
+<wire x1="23.53" y1="18.89" x2="22.1" y2="18.89" width="0.1524" layer="1"/>
+<wire x1="22.1" y1="18.89" x2="21.475" y2="19.675" width="0.1524" layer="1"/>
+<wire x1="49.4" y1="22.35" x2="50.15" y2="22.35" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB0_ID">
 <contactref element="U2" pad="P16"/>
@@ -1717,9 +1731,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="USB1" pad="D+"/>
 <wire x1="5.9828" y1="22.86" x2="4.85" y2="23" width="0.1524" layer="1"/>
 <wire x1="5.9828" y1="22.86" x2="17.24" y2="22.86" width="0.1524" layer="1"/>
-<wire x1="17.24" y1="22.86" x2="18.3" y2="21.729" width="0.1524" layer="1"/>
-<wire x1="18.3" y1="21.729" x2="22.2" y2="21.729" width="0.1524" layer="1"/>
-<wire x1="22.2" y1="21.729" x2="22.745" y2="22.215" width="0.1524" layer="1"/>
+<wire x1="17.24" y1="22.86" x2="18.3" y2="21.73" width="0.1524" layer="1"/>
+<wire x1="18.3" y1="21.73" x2="22.2" y2="21.73" width="0.1524" layer="1"/>
+<wire x1="22.2" y1="21.73" x2="22.745" y2="22.215" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB1_DM" class="2">
 <contactref element="U2" pad="R18"/>
@@ -1766,9 +1780,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="4.953" y1="22.4028" x2="4.9564" y2="22.4028" width="0.1524" layer="1"/>
 <wire x1="4.9564" y1="22.4028" x2="4.85" y2="22.35" width="0.1524" layer="1"/>
 <wire x1="5.9436" y1="22.5552" x2="17.0448" y2="22.5552" width="0.1524" layer="1"/>
-<wire x1="17.0448" y1="22.5552" x2="18.1" y2="21.4238" width="0.1524" layer="1"/>
-<wire x1="18.1" y1="21.4238" x2="22.29" y2="21.4238" width="0.1524" layer="1"/>
-<wire x1="22.29" y1="21.4238" x2="22.745" y2="20.945" width="0.1524" layer="1"/>
+<wire x1="17.0448" y1="22.5552" x2="18.1" y2="21.425" width="0.1524" layer="1"/>
+<wire x1="18.1" y1="21.425" x2="22.29" y2="21.425" width="0.1524" layer="1"/>
+<wire x1="22.29" y1="21.425" x2="22.745" y2="20.945" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="L1" pad="2"/>
