@@ -3282,6 +3282,7 @@ by exp-lbrs.ulp</description>
 <dimension x1="13.5" y1="13.5" x2="13.5" y2="-13.5" x3="18.5" y3="0" textsize="1.27" layer="47" precision="3" visible="yes"/>
 <dimension x1="-13.5" y1="13.5" x2="-13.5" y2="-13.5" x3="-18.5" y3="0" textsize="1.27" layer="47" unit="inch" precision="3" visible="yes"/>
 <dimension x1="-13.5" y1="-13.5" x2="13.5" y2="-13.5" x3="0" y3="-18.5" textsize="1.27" layer="47" unit="mil" precision="3" visible="yes"/>
+<text x="-12.7" y="13.97" size="0.762" layer="25">&gt;NAME</text>
 </package>
 <package name="MICRO-SD-SOCKET-PP">
 <wire x1="-14" y1="0" x2="-14" y2="13.2" width="0.2032" layer="21"/>
@@ -3350,7 +3351,7 @@ by exp-lbrs.ulp</description>
 <smd name="SHIELD4" x="0" y="-4" dx="2.2" dy="1.9" layer="1" rot="R90"/>
 <smd name="VBUS" x="2.85" y="1.3" dx="0.4" dy="1.4" layer="1" rot="R90"/>
 <text x="-5.2" y="5.5" size="0.3048" layer="51">PCB Front</text>
-<text x="-1.27" y="5.969" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.27" y="5.969" size="0.762" layer="25">&gt;NAME</text>
 <text x="-1.27" y="5.461" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOT95P290X145-5N">
@@ -3457,6 +3458,7 @@ by exp-lbrs.ulp</description>
 <package name="445C33D24M00000">
 <smd name="1" x="1.27" y="2.54" dx="1.8" dy="2.4" layer="1"/>
 <smd name="2" x="5.07" y="2.54" dx="1.8" dy="2.4" layer="1"/>
+<text x="0" y="5.08" size="0.762" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -4695,7 +4697,6 @@ NOTE: CD1 and CD2 are connected internally</description>
 <part name="R26" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="100K,1%"/>
 <part name="R11" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="0"/>
 <part name="R12" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="0,DNI"/>
-<part name="L2" library="Seeed-OPL-Inductor" deviceset="INDUCTOR/FERRITE-BEAD" device="'0603'" value="120"/>
 <part name="L1" library="Seeed-OPL-Inductor" deviceset="INDUCTOR/FERRITE-BEAD" device="'0603'" value="120"/>
 <part name="C11" library="Strawson_Eagle_Lib" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="C10" library="Strawson_Eagle_Lib" deviceset="CAP" device="0805" value="10uF"/>
@@ -5431,7 +5432,6 @@ NOTE: CD1 and CD2 are connected internally</description>
 <attribute name="NAME" x="118.11" y="64.9986" size="1.27" layer="95" align="center-right"/>
 <attribute name="VALUE" x="125.73" y="65.278" size="1.27" layer="96" align="center-left"/>
 </instance>
-<instance part="L2" gate="L" x="304.8" y="60.96"/>
 <instance part="L1" gate="L" x="304.8" y="63.5"/>
 <instance part="C11" gate="G$1" x="292.1" y="55.88" smashed="yes">
 <attribute name="NAME" x="293.624" y="58.801" size="1.778" layer="95"/>
@@ -5546,8 +5546,6 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="297.18" y1="53.34" x2="342.9" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="53.34" x2="297.18" y2="60.96" width="0.1524" layer="91"/>
 <junction x="297.18" y="53.34"/>
-<pinref part="L2" gate="L" pin="1"/>
-<wire x1="297.18" y1="60.96" x2="299.72" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 <junction x="292.1" y="53.34"/>
 <pinref part="C10" gate="G$1" pin="2"/>
@@ -5556,6 +5554,13 @@ NOTE: CD1 and CD2 are connected internally</description>
 <pinref part="USB0" gate="G$1" pin="SHIELD"/>
 <wire x1="320.04" y1="96.52" x2="317.5" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="96.52" x2="317.5" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="USB1" gate="G$1" pin="SHIELD"/>
+<pinref part="USB1" gate="G$1" pin="GND"/>
+<wire x1="312.42" y1="60.96" x2="317.5" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="73.66" x2="312.42" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="73.66" x2="312.42" y2="60.96" width="0.1524" layer="91"/>
+<junction x="312.42" y="60.96"/>
+<wire x1="297.18" y1="60.96" x2="312.42" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MDIR_4A" class="0">
@@ -5743,18 +5748,6 @@ NOTE: CD1 and CD2 are connected internally</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
 <label x="96.52" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$128" class="3">
-<segment>
-<pinref part="L2" gate="L" pin="2"/>
-<pinref part="USB1" gate="G$1" pin="SHIELD"/>
-<wire x1="309.88" y1="60.96" x2="312.42" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="USB1" gate="G$1" pin="GND"/>
-<wire x1="312.42" y1="60.96" x2="317.5" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="73.66" x2="312.42" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="73.66" x2="312.42" y2="60.96" width="0.1524" layer="91"/>
-<junction x="312.42" y="60.96"/>
 </segment>
 </net>
 <net name="N$129" class="0">
