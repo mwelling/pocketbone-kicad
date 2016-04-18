@@ -1208,8 +1208,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PIN_COUNT" value="5" x="32.1146" y="2.4178" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="Single Buffer/Driver With Open-Drain Output" x="32.1146" y="2.4178" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP2" library="pocketbone" package="USB-AB-MICRO-SMD" value="USB-MICRO-SMD" x="2.09" y="12.1372"/>
-<element name="JP1" library="pocketbone" package="USB-AB-MICRO-SMD" value="USB-MICRO-SMD" x="2.134" y="23.0042"/>
+<element name="USB0" library="pocketbone" package="USB-AB-MICRO-SMD" value="USB-MICRO-SMD" x="2.09" y="12.1372"/>
+<element name="USB1" library="pocketbone" package="USB-AB-MICRO-SMD" value="USB-MICRO-SMD" x="2.134" y="23.0042"/>
 <element name="Y1" library="pocketbone" package="CM200C-32.768KAZF-UT" value="CM200C-32.768KAZF-UT" x="15.999" y="15.658"/>
 <element name="Y2" library="pocketbone" package="445C33D24M00000" value="445C33D24M00000" x="25.1948" y="9.636" rot="R90"/>
 <element name="TP3" library="testpad" package="B1,27" value="TPSQB1,27" x="4.191" y="4.4958">
@@ -1250,7 +1250,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="USB_DC" class="3">
 <contactref element="U2" pad="Y8"/>
 <contactref element="U2" pad="Y9"/>
-<contactref element="JP2" pad="VBUS"/>
+<contactref element="USB0" pad="VBUS"/>
 <contactref element="U2" pad="P15"/>
 <wire x1="40.0144" y1="29.6832" x2="41.2844" y2="29.6832" width="0" layer="19" extent="1-1"/>
 <wire x1="32.3944" y1="22.0632" x2="40.0144" y2="29.6832" width="0" layer="19" extent="1-1"/>
@@ -1353,11 +1353,11 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="L2" pad="1"/>
 <contactref element="C11" pad="2"/>
 <contactref element="C10" pad="2"/>
-<contactref element="JP2" pad="GND"/>
-<contactref element="JP2" pad="SHIELD1"/>
-<contactref element="JP2" pad="SHIELD2"/>
-<contactref element="JP2" pad="SHIELD3"/>
-<contactref element="JP2" pad="SHIELD4"/>
+<contactref element="USB0" pad="GND"/>
+<contactref element="USB0" pad="SHIELD1"/>
+<contactref element="USB0" pad="SHIELD2"/>
+<contactref element="USB0" pad="SHIELD3"/>
+<contactref element="USB0" pad="SHIELD4"/>
 <contactref element="U2" pad="A1"/>
 <contactref element="U2" pad="J6"/>
 <contactref element="U2" pad="L19"/>
@@ -1699,22 +1699,22 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="USB0_DP" class="2">
 <contactref element="U2" pad="N17"/>
-<contactref element="JP2" pad="D+"/>
+<contactref element="USB0" pad="D+"/>
 <wire x1="4.94" y1="12.1372" x2="29.8544" y2="20.7932" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB0_DM" class="2">
 <contactref element="U2" pad="N18"/>
-<contactref element="JP2" pad="D-"/>
+<contactref element="USB0" pad="D-"/>
 <wire x1="4.94" y1="12.7872" x2="28.5844" y2="20.7932" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB0_ID">
 <contactref element="U2" pad="P16"/>
-<contactref element="JP2" pad="ID"/>
+<contactref element="USB0" pad="ID"/>
 <wire x1="4.94" y1="11.4872" x2="31.1244" y2="22.0632" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB1_DP" class="2">
 <contactref element="U2" pad="R17"/>
-<contactref element="JP1" pad="D+"/>
+<contactref element="USB1" pad="D+"/>
 <wire x1="29.8544" y1="23.3332" x2="29.6578" y2="23.1808" width="0.1524" layer="1"/>
 <wire x1="29.6578" y1="23.1808" x2="29.337" y2="22.857459375" width="0.1524" layer="1"/>
 <wire x1="29.337" y1="22.857459375" x2="5.9828" y2="22.86" width="0.1524" layer="1"/>
@@ -1722,16 +1722,16 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="USB1_DM" class="2">
 <contactref element="U2" pad="R18"/>
-<contactref element="JP1" pad="D-"/>
+<contactref element="USB1" pad="D-"/>
 <wire x1="4.984" y1="23.6542" x2="28.5844" y2="23.3332" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$128" class="3">
 <contactref element="L2" pad="2"/>
-<contactref element="JP1" pad="SHIELD1"/>
-<contactref element="JP1" pad="SHIELD2"/>
-<contactref element="JP1" pad="SHIELD3"/>
-<contactref element="JP1" pad="SHIELD4"/>
-<contactref element="JP1" pad="GND"/>
+<contactref element="USB1" pad="SHIELD1"/>
+<contactref element="USB1" pad="SHIELD2"/>
+<contactref element="USB1" pad="SHIELD3"/>
+<contactref element="USB1" pad="SHIELD4"/>
+<contactref element="USB1" pad="GND"/>
 <wire x1="4.984" y1="21.7042" x2="6.792" y2="21.5896" width="0" layer="19" extent="1-1"/>
 <wire x1="2.134" y1="21.7542" x2="4.984" y2="21.7042" width="0" layer="19" extent="1-1"/>
 <wire x1="2.134" y1="24.2542" x2="2.134" y2="21.7542" width="0" layer="19" extent="1-1"/>
@@ -1773,7 +1773,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="USB1_ID">
 <contactref element="U2" pad="P17"/>
-<contactref element="JP1" pad="ID"/>
+<contactref element="USB1" pad="ID"/>
 <wire x1="29.8544" y1="22.0632" x2="29.829" y2="22.0632" width="0.1524" layer="1"/>
 <wire x1="29.829" y1="22.0632" x2="29.337" y2="22.552659375" width="0.1524" layer="1"/>
 <wire x1="29.337" y1="22.552659375" x2="5.9436" y2="22.5552" width="0.1524" layer="1"/>
@@ -1783,7 +1783,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$1">
 <contactref element="L1" pad="2"/>
-<contactref element="JP1" pad="VBUS"/>
+<contactref element="USB1" pad="VBUS"/>
 <wire x1="4.984" y1="24.3042" x2="6.8006" y2="24.5864" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>

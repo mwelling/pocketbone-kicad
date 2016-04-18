@@ -4704,9 +4704,9 @@ NOTE: CD1 and CD2 are connected internally</description>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="U3" library="pocketbone" deviceset="SN74LVC1G07_DCK_5" device=""/>
 <part name="R29" library="Strawson_Eagle_Lib" deviceset="RESISTOR" device="0402-RES" value="10K,1%"/>
-<part name="JP2" library="pocketbone" deviceset="USB-AB" device="" value="USB-MICRO-SMD"/>
+<part name="USB0" library="pocketbone" deviceset="USB-AB" device="" value="USB-MICRO-SMD"/>
 <part name="J1" library="pocketbone" deviceset="USD_CONNECTOR" device=""/>
-<part name="JP1" library="pocketbone" deviceset="USB-AB" device="" value="USB-MICRO-SMD"/>
+<part name="USB1" library="pocketbone" deviceset="USB-AB" device="" value="USB-MICRO-SMD"/>
 <part name="TP2" library="testpad" deviceset="TPSQ" device="B1,27">
 <attribute name="TP_SIGNAL_NAME" value="5.0V"/>
 </part>
@@ -5442,8 +5442,8 @@ NOTE: CD1 and CD2 are connected internally</description>
 <attribute name="VALUE" x="275.844" y="48.641" size="1.778" layer="96"/>
 </instance>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="JP2" gate="G$1" x="325.12" y="104.14"/>
-<instance part="JP1" gate="G$1" x="322.58" y="68.58"/>
+<instance part="USB0" gate="G$1" x="325.12" y="104.14"/>
+<instance part="USB1" gate="G$1" x="322.58" y="68.58"/>
 <instance part="R27" gate="G$1" x="304.8" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="303.3014" y="138.43" size="1.27" layer="95" rot="R90" align="center-right"/>
 <attribute name="VALUE" x="303.022" y="146.05" size="1.27" layer="96" rot="R90" align="center-left"/>
@@ -5551,9 +5551,9 @@ NOTE: CD1 and CD2 are connected internally</description>
 <pinref part="C11" gate="G$1" pin="2"/>
 <junction x="292.1" y="53.34"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<pinref part="JP2" gate="G$1" pin="GND"/>
+<pinref part="USB0" gate="G$1" pin="GND"/>
 <wire x1="320.04" y1="109.22" x2="312.42" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="SHIELD"/>
+<pinref part="USB0" gate="G$1" pin="SHIELD"/>
 <wire x1="320.04" y1="96.52" x2="317.5" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="96.52" x2="317.5" y2="83.82" width="0.1524" layer="91"/>
 </segment>
@@ -5679,7 +5679,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="238.76" y1="124.46" x2="307.34" y2="124.46" width="0.1524" layer="91"/>
 <label x="195.58" y="139.7" size="1.778" layer="95"/>
 <wire x1="307.34" y1="124.46" x2="307.34" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="D+"/>
+<pinref part="USB0" gate="G$1" pin="D+"/>
 <wire x1="307.34" y1="104.14" x2="320.04" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5691,7 +5691,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="236.22" y1="121.92" x2="304.8" y2="121.92" width="0.1524" layer="91"/>
 <label x="195.58" y="137.16" size="1.778" layer="95"/>
 <wire x1="304.8" y1="121.92" x2="304.8" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="D-"/>
+<pinref part="USB0" gate="G$1" pin="D-"/>
 <wire x1="304.8" y1="101.6" x2="320.04" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5703,7 +5703,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="231.14" y1="119.38" x2="302.26" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="119.38" x2="302.26" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="106.68" x2="320.04" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="USBID"/>
+<pinref part="USB0" gate="G$1" pin="USBID"/>
 <label x="195.58" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5715,7 +5715,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="223.52" y1="88.9" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="88.9" x2="274.32" y2="68.58" width="0.1524" layer="91"/>
 <label x="195.58" y="121.92" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="D+"/>
+<pinref part="USB1" gate="G$1" pin="D+"/>
 <wire x1="274.32" y1="68.58" x2="317.5" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5727,7 +5727,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="220.98" y1="86.36" x2="266.7" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="86.36" x2="266.7" y2="66.04" width="0.1524" layer="91"/>
 <label x="195.58" y="119.38" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="D-"/>
+<pinref part="USB1" gate="G$1" pin="D-"/>
 <wire x1="266.7" y1="66.04" x2="317.5" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5748,9 +5748,9 @@ NOTE: CD1 and CD2 are connected internally</description>
 <net name="N$128" class="3">
 <segment>
 <pinref part="L2" gate="L" pin="2"/>
-<pinref part="JP1" gate="G$1" pin="SHIELD"/>
+<pinref part="USB1" gate="G$1" pin="SHIELD"/>
 <wire x1="309.88" y1="60.96" x2="312.42" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="GND"/>
+<pinref part="USB1" gate="G$1" pin="GND"/>
 <wire x1="312.42" y1="60.96" x2="317.5" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="73.66" x2="312.42" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="73.66" x2="312.42" y2="60.96" width="0.1524" layer="91"/>
@@ -5818,7 +5818,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="309.88" y1="127" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="127" x2="309.88" y2="127" width="0.1524" layer="91"/>
 <junction x="309.88" y="127"/>
-<pinref part="JP2" gate="G$1" pin="VBUS"/>
+<pinref part="USB0" gate="G$1" pin="VBUS"/>
 <wire x1="309.88" y1="99.06" x2="320.04" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U2" gate="C" pin="USB0_VBUS"/>
 <label x="340.36" y="129.54" size="1.778" layer="95"/>
@@ -5830,7 +5830,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <pinref part="U2" gate="C" pin="USB1_ID"/>
 <wire x1="190.5" y1="114.3" x2="276.86" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="114.3" x2="276.86" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="USBID"/>
+<pinref part="USB1" gate="G$1" pin="USBID"/>
 <wire x1="276.86" y1="71.12" x2="317.5" y2="71.12" width="0.1524" layer="91"/>
 <label x="195.58" y="114.3" size="1.778" layer="95"/>
 </segment>
@@ -5838,7 +5838,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="L1" gate="L" pin="2"/>
-<pinref part="JP1" gate="G$1" pin="VBUS"/>
+<pinref part="USB1" gate="G$1" pin="VBUS"/>
 <wire x1="309.88" y1="63.5" x2="317.5" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
