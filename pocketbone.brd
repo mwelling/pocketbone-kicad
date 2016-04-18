@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1312,10 +1312,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="18.935" y1="26.025" x2="18.935" y2="24.755" width="0" layer="19" extent="1-1"/>
 <wire x1="9.1732" y1="19.013740625" x2="18.935" y2="24.755" width="0" layer="19" extent="1-1"/>
 <wire x1="7.5908" y1="19.086259375" x2="9.1732" y2="19.013740625" width="0" layer="19" extent="1-1"/>
-<wire x1="7.2836" y1="14.5164" x2="7.5908" y2="19.086259375" width="0" layer="19" extent="1-1"/>
+<wire x1="5.5852" y1="15.1536" x2="7.5908" y2="19.086259375" width="0" layer="19" extent="1-1"/>
+<wire x1="7.2836" y1="14.5164" x2="5.5852" y2="15.1536" width="0" layer="19" extent="1-1"/>
 <wire x1="7.4168" y1="12.8016" x2="7.2836" y2="14.5164" width="0" layer="19" extent="1-1"/>
 <wire x1="8.9954" y1="13.070140625" x2="7.4168" y2="12.8016" width="0" layer="19" extent="1-1"/>
-<wire x1="5.5852" y1="15.1536" x2="7.2836" y2="14.5164" width="0" layer="19" extent="1-1"/>
 <wire x1="6.8672" y1="26.5328" x2="7.5908" y2="19.086259375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_3V3AUX">
@@ -1716,7 +1716,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U2" pad="R17"/>
 <contactref element="USB1" pad="D+"/>
 <wire x1="5.9828" y1="22.86" x2="4.85" y2="23" width="0.1524" layer="1"/>
-<wire x1="5.9828" y1="22.86" x2="22.745" y2="22.215" width="0" layer="19" extent="1-1"/>
+<wire x1="5.9828" y1="22.86" x2="17.24" y2="22.86" width="0.1524" layer="1"/>
+<wire x1="17.24" y1="22.86" x2="18.3" y2="21.729" width="0.1524" layer="1"/>
+<wire x1="18.3" y1="21.729" x2="22.2" y2="21.729" width="0.1524" layer="1"/>
+<wire x1="22.2" y1="21.729" x2="22.745" y2="22.215" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB1_DM" class="2">
 <contactref element="U2" pad="R18"/>
@@ -1762,7 +1765,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="5.9436" y1="22.5552" x2="4.953" y2="22.4028" width="0.1524" layer="1"/>
 <wire x1="4.953" y1="22.4028" x2="4.9564" y2="22.4028" width="0.1524" layer="1"/>
 <wire x1="4.9564" y1="22.4028" x2="4.85" y2="22.35" width="0.1524" layer="1"/>
-<wire x1="5.9436" y1="22.5552" x2="22.745" y2="20.945" width="0" layer="19" extent="1-1"/>
+<wire x1="5.9436" y1="22.5552" x2="17.0448" y2="22.5552" width="0.1524" layer="1"/>
+<wire x1="17.0448" y1="22.5552" x2="18.1" y2="21.4238" width="0.1524" layer="1"/>
+<wire x1="18.1" y1="21.4238" x2="22.29" y2="21.4238" width="0.1524" layer="1"/>
+<wire x1="22.29" y1="21.4238" x2="22.745" y2="20.945" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="L1" pad="2"/>
