@@ -209,10 +209,8 @@ by exp-lbrs.ulp</description>
 <smd name="3" x="-1.0414" y="-0.6499875" dx="1.1684" dy="0.3556" layer="1"/>
 <smd name="4" x="1.0414" y="-0.6499875" dx="1.1684" dy="0.3556" layer="1"/>
 <smd name="5" x="1.0414" y="0.6499875" dx="1.1684" dy="0.3556" layer="1"/>
-<text x="-1.8796" y="0.889" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-1.8796" y="0.889" size="1.27" layer="25" ratio="6" rot="SR0">*</text>
-<text x="-2.8702" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
-<text x="-3.4544" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+<text x="-1.6002" y="1.905" size="0.762" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-2.1844" y="-1.905" size="0.762" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
 </package>
 <package name="FKIT-LED-1206">
 <wire x1="1.55" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
@@ -951,10 +949,8 @@ by exp-lbrs.ulp</description>
 <smd name="3" x="-1.2954" y="-0.9398" dx="1.27" dy="0.5588" layer="1"/>
 <smd name="4" x="1.2954" y="-0.9398" dx="1.27" dy="0.5588" layer="1"/>
 <smd name="5" x="1.2954" y="0.9398" dx="1.27" dy="0.5588" layer="1"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-2.1336" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-4.5466" y="1.8034" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-5.588" y="-4.0132" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<text x="-2.0066" y="1.8034" size="0.762" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-1.778" y="-2.7432" size="0.762" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
 <package name="INT2-3.5-D6.5XH8.0MM">
 <circle x="0" y="0" radius="3.25" width="0.127" layer="21"/>
