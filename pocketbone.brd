@@ -1501,6 +1501,20 @@ Please make sure your boards conform to these design rules.</description>
 <via x="6.9342" y="19.8882" extent="1-16" drill="0.3302"/>
 <via x="17.4498" y="25.3746" extent="1-16" drill="0.3302"/>
 <via x="47.5488" y="25.7556" extent="1-16" drill="0.3302"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C2" pad="2"/>
+<contactref element="J1" pad="VCC"/>
+<wire x1="50.1396" y1="13.8684" x2="50.1396" y2="13.1064" width="0.1524" layer="1"/>
+<wire x1="50.1396" y1="13.1064" x2="50.1396" y2="12.4968" width="0.1524" layer="1"/>
+<wire x1="50.0634" y1="13.9446" x2="50.1396" y2="13.8684" width="0.1524" layer="1"/>
+<wire x1="50.1396" y1="12.4968" x2="50.2008" y2="12.4296" width="0.1524" layer="1"/>
+<wire x1="50.0634" y1="13.9446" x2="50.0096" y2="13.9656" width="0.1524" layer="1"/>
+<wire x1="48.9204" y1="13.335" x2="47.9298" y2="13.335" width="0.1524" layer="16"/>
+<wire x1="49.149" y1="13.1064" x2="48.9204" y2="13.335" width="0.1524" layer="16"/>
+<wire x1="50.1396" y1="13.1064" x2="49.149" y2="13.1064" width="0.1524" layer="1"/>
+<wire x1="47.9298" y1="13.335" x2="47.9" y2="13.36" width="0.1524" layer="16"/>
+<via x="49.149" y="13.1064" extent="1-16" drill="0.3302"/>
+<wire x1="46.867" y1="23.737059375" x2="50.0096" y2="13.9656" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_3V3AUX">
 <contactref element="U2" pad="Y11"/>
@@ -2234,21 +2248,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="21.4884" y1="12.0396" x2="21.475" y2="12.055" width="0.1524" layer="1"/>
 <wire x1="47.7012" y1="12.192" x2="47.7" y2="12.26" width="0.1524" layer="16"/>
 <via x="22.098" y="9.9822" extent="1-16" drill="0.3302"/>
-</signal>
-<signal name="VCC_3V3B">
-<contactref element="C3" pad="2"/>
-<contactref element="C2" pad="2"/>
-<contactref element="J1" pad="VCC"/>
-<wire x1="50.1396" y1="13.8684" x2="50.1396" y2="13.1064" width="0.1524" layer="1"/>
-<wire x1="50.1396" y1="13.1064" x2="50.1396" y2="12.4968" width="0.1524" layer="1"/>
-<wire x1="50.0634" y1="13.9446" x2="50.1396" y2="13.8684" width="0.1524" layer="1"/>
-<wire x1="50.1396" y1="12.4968" x2="50.2008" y2="12.4296" width="0.1524" layer="1"/>
-<wire x1="50.0634" y1="13.9446" x2="50.0096" y2="13.9656" width="0.1524" layer="1"/>
-<wire x1="48.9204" y1="13.335" x2="47.9298" y2="13.335" width="0.1524" layer="16"/>
-<wire x1="49.149" y1="13.1064" x2="48.9204" y2="13.335" width="0.1524" layer="16"/>
-<wire x1="50.1396" y1="13.1064" x2="49.149" y2="13.1064" width="0.1524" layer="1"/>
-<wire x1="47.9298" y1="13.335" x2="47.9" y2="13.36" width="0.1524" layer="16"/>
-<via x="49.149" y="13.1064" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="NTE">
 <contactref element="U2" pad="F18"/>

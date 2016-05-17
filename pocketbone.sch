@@ -4926,6 +4926,19 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="274.32" y1="248.92" x2="292.1" y2="248.92" width="0.1524" layer="91"/>
 <label x="281.94" y="248.92" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="10.16" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
+<label x="10.16" y="20.32" size="1.778" layer="95"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<junction x="30.48" y="20.32"/>
+<pinref part="J1" gate="1" pin="VCC"/>
+<wire x1="27.94" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="83.82" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
+<junction x="17.78" y="20.32"/>
+</segment>
 </net>
 <net name="VDD_3V3AUX" class="0">
 <segment>
@@ -5273,21 +5286,6 @@ NOTE: CD1 and CD2 are connected internally</description>
 <wire x1="27.94" y1="78.74" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="78.74" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCC_3V3B" class="0">
-<segment>
-<wire x1="10.16" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
-<label x="10.16" y="20.32" size="1.778" layer="95"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<junction x="30.48" y="20.32"/>
-<pinref part="J1" gate="1" pin="VCC"/>
-<wire x1="27.94" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="83.82" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
-<junction x="17.78" y="20.32"/>
 </segment>
 </net>
 <net name="NTE" class="0">
