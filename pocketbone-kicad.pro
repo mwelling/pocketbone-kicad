@@ -1,4 +1,4 @@
-update=Mon 21 Nov 2016 03:44:57 PM CST
+update=Fri 25 Nov 2016 09:20:19 PM CST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/michael/projects/kicad/libs/OSD335x-KiCad
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=OSD335x
+LibName30=pocketbone-kicad
