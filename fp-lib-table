@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name pocketbone-kicad)(type KiCad)(uri "$(KIPRJMOD)/pocketbone-kicad.pretty")(options "")(descr ""))
+  (lib (name Sensors)(type KiCad)(uri /home/michael/projects/kicad/pcbs/96boards-sensors/Sensors.pretty)(options "")(descr ""))
 )
