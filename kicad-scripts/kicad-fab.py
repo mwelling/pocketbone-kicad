@@ -44,7 +44,7 @@ popt.SetSubtractMaskFromSilk(False)
 #   gerbv *
 # just makes sense. The drill-file will be numbered 00 so that it is first.
 plot_plan = [
-    ( Edge_Cuts, "01-EdgeCuts",    "Edges" ),
+    ( Edge_Cuts, "01-Edge_Cuts",   "Edges" ),
 
     ( F_SilkS,   "02-SilkTop",     "Silk top" ),
     ( F_Paste,   "03-PasteTop",    "Paste top" ),
