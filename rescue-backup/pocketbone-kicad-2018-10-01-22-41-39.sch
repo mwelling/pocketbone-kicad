@@ -1,6 +1,35 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:pocketbone-kicad-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr C 22000 17000
 encoding utf-8
@@ -15,7 +44,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 1 1 58336B0D
 P 3450 1800
 F 0 "U2" H 3650 2050 60  0000 L CNN
@@ -26,7 +55,7 @@ F 3 "" H 3450 1800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 2 1 58336B76
 P 9200 1900
 F 0 "U2" H 9400 2150 60  0000 L CNN
@@ -37,7 +66,7 @@ F 3 "" H 9200 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 3 1 58336C01
 P 11700 1800
 F 0 "U2" H 11900 2050 60  0000 L CNN
@@ -48,7 +77,7 @@ F 3 "" H 11700 1800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 4 1 58336C74
 P 2000 5300
 F 0 "U2" H 2200 5550 60  0000 L CNN
@@ -59,7 +88,7 @@ F 3 "" H 2000 5300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 5 1 58336D85
 P 7950 6000
 F 0 "U2" H 8150 6250 60  0000 L CNN
@@ -70,7 +99,7 @@ F 3 "" H 7950 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 6 1 58336E20
 P 11400 5900
 F 0 "U2" H 11600 6150 60  0000 L CNN
@@ -81,7 +110,7 @@ F 3 "" H 11400 5900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 7 1 58336EC9
 P 2600 8900
 F 0 "U2" H 2800 9150 60  0000 L CNN
@@ -92,7 +121,7 @@ F 3 "" H 2600 8900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 8 1 58336FA4
 P 15000 5300
 F 0 "U2" H 15200 5550 60  0000 L CNN
@@ -103,7 +132,7 @@ F 3 "" H 15000 5300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 9 1 58337031
 P 11900 9100
 F 0 "U2" H 12100 9350 60  0000 L CNN
@@ -114,7 +143,7 @@ F 3 "" H 11900 9100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 10 1 583370D5
 P 5800 11750
 F 0 "U2" H 6000 12000 60  0000 L CNN
@@ -125,7 +154,7 @@ F 3 "" H 5800 11750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 11 1 5833717C
 P 8600 12000
 F 0 "U2" H 8800 12250 60  0000 L CNN
@@ -136,7 +165,7 @@ F 3 "" H 8600 12000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:OSD3358 U2
+L OSD3358 U2
 U 12 1 5833722D
 P 12025 12300
 F 0 "U2" H 12225 12550 60  0000 L CNN
@@ -179,7 +208,7 @@ USB0_VBUS
 Text GLabel 8350 10950 0    40   BiDi ~ 0
 USB0_ID
 $Comp
-L power:GND #PWR01
+L GND #PWR01
 U 1 1 5833AB86
 P 9250 9750
 F 0 "#PWR01" H 9250 9500 50  0001 C CNN
@@ -190,7 +219,7 @@ F 3 "" H 9250 9750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:FILTER FB1
+L FILTER FB1
 U 1 1 5833B268
 P 8900 8850
 F 0 "FB1" H 8900 9000 50  0000 C CNN
@@ -201,7 +230,7 @@ F 3 "" H 8900 8850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C8
+L C_Small C8
 U 1 1 5833BD4F
 P 8100 9000
 F 0 "C8" H 8110 9070 50  0000 L CNN
@@ -212,7 +241,7 @@ F 3 "" H 8100 9000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C11
+L C_Small C11
 U 1 1 5833C348
 P 8450 9000
 F 0 "C11" H 8460 9070 50  0000 L CNN
@@ -223,7 +252,7 @@ F 3 "" H 8450 9000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L GND #PWR02
 U 1 1 5833C431
 P 8100 9150
 F 0 "#PWR02" H 8100 8900 50  0001 C CNN
@@ -234,7 +263,7 @@ F 3 "" H 8100 9150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L GND #PWR03
 U 1 1 5833C472
 P 8450 9150
 F 0 "#PWR03" H 8450 8900 50  0001 C CNN
@@ -245,7 +274,7 @@ F 3 "" H 8450 9150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:FILTER FB2
+L FILTER FB2
 U 1 1 5833CED5
 P 8900 10200
 F 0 "FB2" H 8900 10350 50  0000 C CNN
@@ -256,7 +285,7 @@ F 3 "" H 8900 10200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C9
+L C_Small C9
 U 1 1 5833CEDC
 P 8100 10350
 F 0 "C9" H 8110 10420 50  0000 L CNN
@@ -267,7 +296,7 @@ F 3 "" H 8100 10350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C12
+L C_Small C12
 U 1 1 5833CEE2
 P 8450 10350
 F 0 "C12" H 8460 10420 50  0000 L CNN
@@ -278,7 +307,7 @@ F 3 "" H 8450 10350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L GND #PWR04
 U 1 1 5833CEE8
 P 8100 10500
 F 0 "#PWR04" H 8100 10250 50  0001 C CNN
@@ -289,7 +318,7 @@ F 3 "" H 8100 10500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L GND #PWR05
 U 1 1 5833CEEE
 P 8450 10500
 F 0 "#PWR05" H 8450 10250 50  0001 C CNN
@@ -300,7 +329,7 @@ F 3 "" H 8450 10500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L GND #PWR06
 U 1 1 5833CF7E
 P 9250 11100
 F 0 "#PWR06" H 9250 10850 50  0001 C CNN
@@ -311,7 +340,7 @@ F 3 "" H 9250 11100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR07
+L +3.3V #PWR07
 U 1 1 5833EEB4
 P 4300 4500
 F 0 "#PWR07" H 4300 4350 50  0001 C CNN
@@ -322,7 +351,7 @@ F 3 "" H 4300 4500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R5
+L R R5
 U 1 1 5834317C
 P 3150 4250
 F 0 "R5" V 3230 4250 50  0000 C CNN
@@ -333,7 +362,7 @@ F 3 "" H 3150 4250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L GND #PWR08
 U 1 1 583456E1
 P 3150 4500
 F 0 "#PWR08" H 3150 4250 50  0001 C CNN
@@ -372,7 +401,7 @@ MMC0_DAT3
 Text GLabel 13600 3100 2    40   BiDi ~ 0
 MMC0_DAT2
 $Comp
-L power:GND #PWR09
+L GND #PWR09
 U 1 1 5834C7DE
 P 15450 3850
 F 0 "#PWR09" H 15450 3600 50  0001 C CNN
@@ -383,7 +412,7 @@ F 3 "" H 15450 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR010
+L +3.3V #PWR010
 U 1 1 5834CC24
 P 14950 2150
 F 0 "#PWR010" H 14950 2000 50  0001 C CNN
@@ -394,7 +423,7 @@ F 3 "" H 14950 2150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR011
+L +5V #PWR011
 U 1 1 5834E5A1
 P 2700 1600
 F 0 "#PWR011" H 2700 1450 50  0001 C CNN
@@ -407,7 +436,7 @@ $EndComp
 Text GLabel 3200 2000 0    40   BiDi ~ 0
 USB0_VBUS
 $Comp
-L device:Crystal_Small Y2
+L Crystal_Small Y2
 U 1 1 5834F8B8
 P 8500 3350
 F 0 "Y2" H 8500 3450 50  0000 C CNN
@@ -418,7 +447,7 @@ F 3 "http://www.ctscorp.com/wp-content/uploads/2015/11/008-0360-0.pdf" H 8450 35
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C10
+L C_Small C10
 U 1 1 5835026B
 P 8250 3600
 F 0 "C10" H 8260 3670 50  0000 L CNN
@@ -429,7 +458,7 @@ F 3 "" H 8250 3600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C13
+L C_Small C13
 U 1 1 58350A91
 P 8750 3600
 F 0 "C13" H 8760 3670 50  0000 L CNN
@@ -444,7 +473,7 @@ I2C0_SCL
 Text GLabel 2500 9000 0    40   BiDi ~ 0
 I2C0_SDA
 $Comp
-L device:R R2
+L R R2
 U 1 1 5835A918
 P 2500 11750
 F 0 "R2" V 2580 11750 50  0000 C CNN
@@ -455,7 +484,7 @@ F 3 "" H 2500 11750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R3
+L R R3
 U 1 1 5835AE00
 P 2650 11750
 F 0 "R3" V 2730 11750 50  0000 C CNN
@@ -466,7 +495,7 @@ F 3 "" H 2650 11750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR012
+L +3.3V #PWR012
 U 1 1 5835B4E3
 P 2500 11400
 F 0 "#PWR012" H 2500 11250 50  0001 C CNN
@@ -481,7 +510,7 @@ I2C0_SCL
 Text GLabel 2950 4000 0    40   BiDi ~ 0
 I2C0_SDA
 $Comp
-L power:+3.3V #PWR013
+L +3.3V #PWR013
 U 1 1 5835CC55
 P 6350 3600
 F 0 "#PWR013" H 6350 3450 50  0001 C CNN
@@ -492,7 +521,7 @@ F 3 "" H 6350 3600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR014
+L +3.3V #PWR014
 U 1 1 5835E743
 P 4200 11950
 F 0 "#PWR014" H 4200 11800 50  0001 C CNN
@@ -503,7 +532,7 @@ F 3 "" H 4200 11950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L GND #PWR015
 U 1 1 5835E897
 P 3950 12500
 F 0 "#PWR015" H 3950 12250 50  0001 C CNN
@@ -514,7 +543,7 @@ F 3 "" H 3950 12500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R4
+L R R4
 U 1 1 5835ED89
 P 2800 11750
 F 0 "R4" V 2880 11750 50  0000 C CNN
@@ -525,7 +554,7 @@ F 3 "" H 2800 11750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C3
+L C_Small C3
 U 1 1 5835FAA9
 P 4200 12300
 F 0 "C3" V 4300 12300 50  0000 L CNN
@@ -536,7 +565,7 @@ F 3 "" H 4200 12300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L GND #PWR016
 U 1 1 5836047B
 P 4200 12500
 F 0 "#PWR016" H 4200 12250 50  0001 C CNN
@@ -547,7 +576,7 @@ F 3 "" H 4200 12500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:SW_PUSH_SMALL_H SW1
+L SW_PUSH_SMALL_H SW1
 U 1 1 58360E31
 P 1750 2700
 F 0 "SW1" H 1830 2810 50  0000 C CNN
@@ -558,7 +587,7 @@ F 3 "" H 1750 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
+L GND #PWR017
 U 1 1 58361B65
 P 1500 2800
 F 0 "#PWR017" H 1500 2550 50  0001 C CNN
@@ -569,7 +598,7 @@ F 3 "" H 1500 2800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:SW_PUSH_SMALL_H SW2
+L SW_PUSH_SMALL_H SW2
 U 1 1 58362444
 P 1750 3600
 F 0 "SW2" H 1830 3710 50  0000 C CNN
@@ -580,7 +609,7 @@ F 3 "" H 1750 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
+L GND #PWR018
 U 1 1 5836244A
 P 1500 3700
 F 0 "#PWR018" H 1500 3450 50  0001 C CNN
@@ -591,7 +620,7 @@ F 3 "" H 1500 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R1
+L R R1
 U 1 1 583626E9
 P 2100 3300
 F 0 "R1" V 2180 3300 50  0000 C CNN
@@ -602,7 +631,7 @@ F 3 "" H 2100 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR019
+L +3.3V #PWR019
 U 1 1 58362841
 P 2100 3050
 F 0 "#PWR019" H 2100 2900 50  0001 C CNN
@@ -621,7 +650,7 @@ OSC0_GND
 Text GLabel 8850 3850 2    40   BiDi ~ 0
 OSC0_GND
 $Comp
-L device:R R24
+L R R24
 U 1 1 5836A8A6
 P 8500 3000
 F 0 "R24" V 8580 3000 50  0000 C CNN
@@ -632,7 +661,7 @@ F 3 "" H 8500 3000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR020
+L GND #PWR020
 U 1 1 5836D60C
 P 7300 15950
 F 0 "#PWR020" H 7300 15700 50  0001 C CNN
@@ -643,7 +672,7 @@ F 3 "" H 7300 15950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR021
+L GND #PWR021
 U 1 1 5836E3A2
 P 5700 15950
 F 0 "#PWR021" H 5700 15700 50  0001 C CNN
@@ -660,7 +689,7 @@ BOOT PIN STRAPPING
 Text GLabel 9800 3350 0    40   BiDi ~ 0
 TRSTN
 $Comp
-L device:R R25
+L R R25
 U 1 1 5837F094
 P 10100 3350
 F 0 "R25" V 10180 3350 50  0000 C CNN
@@ -671,7 +700,7 @@ F 3 "" H 10100 3350 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR022
+L GND #PWR022
 U 1 1 5837F2FD
 P 10350 3450
 F 0 "#PWR022" H 10350 3200 50  0001 C CNN
@@ -682,7 +711,7 @@ F 3 "" H 10350 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:TEST_1P TP2
+L TEST_1P TP2
 U 1 1 583812D1
 P 2700 12300
 F 0 "TP2" V 2750 12350 50  0000 C CNN
@@ -693,7 +722,7 @@ F 3 "" H 2900 12300 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:Led_Small D3
+L Led_Small D3
 U 1 1 58382058
 P 16000 9650
 F 0 "D3" H 15950 9775 50  0000 L CNN
@@ -704,7 +733,7 @@ F 3 "" V 16000 9650 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:Led_Small D4
+L Led_Small D4
 U 1 1 58382C7F
 P 16000 9950
 F 0 "D4" H 15950 10075 50  0000 L CNN
@@ -715,7 +744,7 @@ F 3 "" V 16000 9950 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:Led_Small D5
+L Led_Small D5
 U 1 1 58382D50
 P 16000 10250
 F 0 "D5" H 15950 10375 50  0000 L CNN
@@ -726,7 +755,7 @@ F 3 "" V 16000 10250 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:Led_Small D2
+L Led_Small D2
 U 1 1 58382E20
 P 16000 9350
 F 0 "D2" H 15950 9475 50  0000 L CNN
@@ -737,7 +766,7 @@ F 3 "" V 16000 9350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C_Small C14
+L C_Small C14
 U 1 1 58384677
 P 14950 3650
 F 0 "C14" H 14960 3720 50  0000 L CNN
@@ -748,7 +777,7 @@ F 3 "" H 14950 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C15
+L C_Small C15
 U 1 1 5838467D
 P 15200 3650
 F 0 "C15" H 15210 3720 50  0000 L CNN
@@ -759,7 +788,7 @@ F 3 "" H 15200 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR023
+L GND #PWR023
 U 1 1 58384AB3
 P 14950 3850
 F 0 "#PWR023" H 14950 3600 50  0001 C CNN
@@ -770,7 +799,7 @@ F 3 "" H 14950 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR024
+L GND #PWR024
 U 1 1 58384B7B
 P 15200 3850
 F 0 "#PWR024" H 15200 3600 50  0001 C CNN
@@ -797,7 +826,7 @@ USR2_LED
 Text GLabel 15700 9350 0    40   BiDi ~ 0
 USR3_LED
 $Comp
-L device:R R31
+L R R31
 U 1 1 5838A2E2
 P 16450 9350
 F 0 "R31" V 16530 9350 50  0000 C CNN
@@ -808,7 +837,7 @@ F 3 "" H 16450 9350 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R32
+L R R32
 U 1 1 5838AA53
 P 16450 9650
 F 0 "R32" V 16530 9650 50  0000 C CNN
@@ -819,7 +848,7 @@ F 3 "" H 16450 9650 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R33
+L R R33
 U 1 1 5838AB76
 P 16450 9950
 F 0 "R33" V 16530 9950 50  0000 C CNN
@@ -830,7 +859,7 @@ F 3 "" H 16450 9950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R34
+L R R34
 U 1 1 5838AB7C
 P 16450 10250
 F 0 "R34" V 16530 10250 50  0000 C CNN
@@ -841,7 +870,7 @@ F 3 "" H 16450 10250 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR025
+L GND #PWR025
 U 1 1 5838B423
 P 16700 10350
 F 0 "#PWR025" H 16700 10100 50  0001 C CNN
@@ -852,7 +881,7 @@ F 3 "" H 16700 10350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C2
+L C_Small C2
 U 1 1 5838D871
 P 2100 3800
 F 0 "C2" H 2110 3870 50  0000 L CNN
@@ -863,7 +892,7 @@ F 3 "" H 2100 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR026
+L GND #PWR026
 U 1 1 5838DF69
 P 2100 4000
 F 0 "#PWR026" H 2100 3750 50  0001 C CNN
@@ -878,7 +907,7 @@ Text GLabel 5950 3600 2    40   BiDi ~ 0
 Text GLabel 15700 9050 0    40   BiDi ~ 0
 3P3AUX
 $Comp
-L pocketbone-kicad-rescue:Led_Small D1
+L Led_Small D1
 U 1 1 58394C14
 P 16000 9050
 F 0 "D1" H 15950 9175 50  0000 L CNN
@@ -889,7 +918,7 @@ F 3 "" V 16000 9050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R30
+L R R30
 U 1 1 58394F2D
 P 16450 9050
 F 0 "R30" V 16530 9050 50  0000 C CNN
@@ -900,7 +929,7 @@ F 3 "" H 16450 9050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L conn:TEST_1P TP5
+L TEST_1P TP5
 U 1 1 5839A405
 P 6450 4000
 F 0 "TP5" V 6550 4150 50  0000 C CNN
@@ -911,7 +940,7 @@ F 3 "" H 6650 4000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L conn:TEST_1P TP1
+L TEST_1P TP1
 U 1 1 5839C1C1
 P 2400 1650
 F 0 "TP1" H 2400 1920 50  0000 C CNN
@@ -922,7 +951,7 @@ F 3 "" H 2600 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:TEST_1P TP6
+L TEST_1P TP6
 U 1 1 5839CD67
 P 6450 4300
 F 0 "TP6" V 6550 4450 50  0000 C CNN
@@ -933,7 +962,7 @@ F 3 "" H 6650 4300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR027
+L GND #PWR027
 U 1 1 5839CF96
 P 6350 4400
 F 0 "#PWR027" H 6350 4150 50  0001 C CNN
@@ -944,7 +973,7 @@ F 3 "" H 6350 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:TEST_1P TP4
+L TEST_1P TP4
 U 1 1 5839E2D9
 P 6450 3700
 F 0 "TP4" V 6550 3850 50  0000 C CNN
@@ -959,7 +988,7 @@ I2C0_SCL
 Text GLabel 2150 12200 0    40   BiDi ~ 0
 I2C0_SDA
 $Comp
-L pocketbone-kicad-rescue:SN74LVC1G07 U1
+L SN74LVC1G07 U1
 U 1 1 58398676
 P 1950 4600
 F 0 "U1" H 1700 4800 60  0000 C CNN
@@ -970,7 +999,7 @@ F 3 "" H 1980 4600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR028
+L GND #PWR028
 U 1 1 5839BE61
 P 1350 4900
 F 0 "#PWR028" H 1350 4650 50  0001 C CNN
@@ -987,7 +1016,7 @@ PMIC_PGOOD
 Text GLabel 1050 4500 0    40   BiDi ~ 0
 VDD_RTC
 $Comp
-L device:C_Small C1
+L C_Small C1
 U 1 1 5839DBB8
 P 1200 4750
 F 0 "C1" V 1300 4700 50  0000 L CNN
@@ -998,7 +1027,7 @@ F 3 "" H 1200 4750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR029
+L GND #PWR029
 U 1 1 5839EFB5
 P 1200 4900
 F 0 "#PWR029" H 1200 4650 50  0001 C CNN
@@ -1017,7 +1046,7 @@ USB1_DRVVBUS
 Text GLabel 5750 9050 0    40   BiDi ~ 0
 USB1_DRVVBUS
 $Comp
-L power:GND #PWR030
+L GND #PWR030
 U 1 1 583B32D7
 P 7250 9150
 F 0 "#PWR030" H 7250 8900 50  0001 C CNN
@@ -1028,7 +1057,7 @@ F 3 "" H 7250 9150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:24LC32AT-IOT U3
+L 24LC32AT-I/OT U3
 U 1 1 583B410C
 P 3450 12250
 F 0 "U3" H 3250 12500 50  0000 C CNN
@@ -1039,7 +1068,7 @@ F 3 "" H 3450 12250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R21
+L R R21
 U 1 1 583B7F93
 P 5900 9300
 F 0 "R21" V 5980 9300 50  0000 C CNN
@@ -1050,7 +1079,7 @@ F 3 "" H 5900 9300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR031
+L GND #PWR031
 U 1 1 583B83D3
 P 5900 9500
 F 0 "#PWR031" H 5900 9250 50  0001 C CNN
@@ -1061,7 +1090,7 @@ F 3 "" H 5900 9500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:TPS2051C U4
+L TPS2051C U4
 U 1 1 583BAC3B
 P 6650 8950
 F 0 "U4" H 6450 9150 60  0000 C CNN
@@ -1072,7 +1101,7 @@ F 3 "" H 6650 8950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C4
+L C_Small C4
 U 1 1 583C3B0C
 P 6100 9250
 F 0 "C4" H 6110 9320 50  0000 L CNN
@@ -1083,7 +1112,7 @@ F 3 "" H 6100 9250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR032
+L GND #PWR032
 U 1 1 583C3C4E
 P 6100 9500
 F 0 "#PWR032" H 6100 9250 50  0001 C CNN
@@ -1094,7 +1123,7 @@ F 3 "" H 6100 9500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C6
+L C_Small C6
 U 1 1 583C4DF8
 P 7500 9000
 F 0 "C6" H 7510 9070 50  0000 L CNN
@@ -1105,7 +1134,7 @@ F 3 "" H 7500 9000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR033
+L GND #PWR033
 U 1 1 583C4DFE
 P 7500 9150
 F 0 "#PWR033" H 7500 8900 50  0001 C CNN
@@ -1116,7 +1145,7 @@ F 3 "" H 7500 9150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:SCHA5B0200 SOK1
+L SCHA5B0200 SOK1
 U 1 1 583C6E02
 P 17350 2650
 F 0 "SOK1" H 17300 3150 60  0000 C CNN
@@ -1129,7 +1158,7 @@ $EndComp
 Text GLabel 14800 3200 0    40   BiDi ~ 0
 MMC0_CD
 $Comp
-L power:GND #PWR034
+L GND #PWR034
 U 1 1 583C890D
 P 18200 3800
 F 0 "#PWR034" H 18200 3550 50  0001 C CNN
@@ -1140,7 +1169,7 @@ F 3 "" H 18200 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R26
+L R R26
 U 1 1 583C9FF8
 P 15900 1950
 F 0 "R26" V 15980 1950 50  0000 C CNN
@@ -1153,7 +1182,7 @@ $EndComp
 Text GLabel 7750 6400 0    40   BiDi ~ 0
 MMC0_CD
 $Comp
-L device:R R27
+L R R27
 U 1 1 583CC6B2
 P 16050 1950
 F 0 "R27" V 16130 1950 50  0000 C CNN
@@ -1164,7 +1193,7 @@ F 3 "" H 16050 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R28
+L R R28
 U 1 1 583CC7BF
 P 16200 1950
 F 0 "R28" V 16280 1950 50  0000 C CNN
@@ -1175,7 +1204,7 @@ F 3 "" H 16200 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R29
+L R R29
 U 1 1 583CC8C7
 P 16350 1950
 F 0 "R29" V 16430 1950 50  0000 C CNN
@@ -1186,7 +1215,7 @@ F 3 "" H 16350 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R35
+L R R35
 U 1 1 583CC9D2
 P 16500 1950
 F 0 "R35" V 16580 1950 50  0000 C CNN
@@ -1197,7 +1226,7 @@ F 3 "" H 16500 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R36
+L R R36
 U 1 1 583CCAE0
 P 16650 1950
 F 0 "R36" V 16730 1950 50  0000 C CNN
@@ -1208,7 +1237,7 @@ F 3 "" H 16650 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R37
+L R R37
 U 1 1 583CCBF1
 P 16800 1950
 F 0 "R37" V 16880 1950 50  0000 C CNN
@@ -1219,7 +1248,7 @@ F 3 "" H 16800 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR035
+L +3.3V #PWR035
 U 1 1 583CD873
 P 15900 1650
 F 0 "#PWR035" H 15900 1500 50  0001 C CNN
@@ -1230,7 +1259,7 @@ F 3 "" H 15900 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:TEST_1P TP3
+L TEST_1P TP3
 U 1 1 583D3DAD
 P 2700 12450
 F 0 "TP3" V 2750 12500 50  0000 C CNN
@@ -1241,7 +1270,7 @@ F 3 "" H 2900 12450 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR036
+L GND #PWR036
 U 1 1 583D3DB3
 P 2800 12550
 F 0 "#PWR036" H 2800 12300 50  0001 C CNN
@@ -1260,7 +1289,7 @@ UART0_TXD
 Text GLabel 15850 13000 0    40   BiDi ~ 0
 UART0_RXD
 $Comp
-L power:GND #PWR037
+L GND #PWR037
 U 1 1 5843B493
 P 16000 13800
 F 0 "#PWR037" H 16000 13550 50  0001 C CNN
@@ -1271,7 +1300,7 @@ F 3 "" H 16000 13800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_01X10 P3
+L CONN_01X10 P3
 U 1 1 5843D08C
 P 16300 13250
 F 0 "P3" H 16300 13800 50  0000 C CNN
@@ -1282,7 +1311,7 @@ F 3 "" H 16300 13250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR038
+L +3.3V #PWR038
 U 1 1 58443E02
 P 16000 12700
 F 0 "#PWR038" H 16000 12550 50  0001 C CNN
@@ -1313,7 +1342,7 @@ SPI_MISO
 Text GLabel 15850 13600 0    40   BiDi ~ 0
 SPI_MOSI
 $Comp
-L device:R_Pack04 RN3
+L R_Pack04 RN3
 U 1 1 58929F6C
 P 5050 7400
 F 0 "RN3" V 4750 7400 50  0000 C CNN
@@ -1324,7 +1353,7 @@ F 3 "" H 5050 7400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_Pack04 RN1
+L R_Pack04 RN1
 U 1 1 5892A8B0
 P 4000 7400
 F 0 "RN1" V 3700 7400 50  0000 C CNN
@@ -1335,7 +1364,7 @@ F 3 "" H 4000 7400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_Pack04 RN4
+L R_Pack04 RN4
 U 1 1 5892AA4D
 P 5650 7400
 F 0 "RN4" V 5350 7400 50  0000 C CNN
@@ -1346,7 +1375,7 @@ F 3 "" H 5650 7400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_Pack04 RN2
+L R_Pack04 RN2
 U 1 1 5892ADFD
 P 4500 4900
 F 0 "RN2" V 4200 4900 50  0000 C CNN
@@ -1357,7 +1386,7 @@ F 3 "" H 4500 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR039
+L GND #PWR039
 U 1 1 5892B36F
 P 3800 7800
 F 0 "#PWR039" H 3800 7550 50  0001 C CNN
@@ -1368,7 +1397,7 @@ F 3 "" H 3800 7800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR040
+L GND #PWR040
 U 1 1 58930773
 P 4850 7800
 F 0 "#PWR040" H 4850 7550 50  0001 C CNN
@@ -1379,7 +1408,7 @@ F 3 "" H 4850 7800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR041
+L GND #PWR041
 U 1 1 58930813
 P 5450 7800
 F 0 "#PWR041" H 5450 7550 50  0001 C CNN
@@ -1390,7 +1419,7 @@ F 3 "" H 5450 7800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_02X02 P4
+L CONN_02X02 P4
 U 1 1 58936BAC
 P 2000 2200
 F 0 "P4" H 2000 2350 50  0000 C CNN
@@ -1448,7 +1477,7 @@ Wire Wire Line
 Wire Wire Line
 	9300 10650 9400 10650
 Wire Wire Line
-	7875 10200 8100 10200
+	7875 10200 8550 10200
 Wire Wire Line
 	8100 10200 8100 10250
 Connection ~ 8100 10200
@@ -1482,7 +1511,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 4400 3150 4500
 Wire Wire Line
-	13200 10100 13250 10100
+	13200 10100 13350 10100
 Wire Wire Line
 	13200 10200 13250 10200
 Wire Wire Line
@@ -1503,19 +1532,19 @@ Wire Wire Line
 Wire Wire Line
 	13500 3500 13600 3500
 Wire Wire Line
-	14800 3000 16650 3000
+	14800 3000 16900 3000
 Wire Wire Line
-	14800 2900 16500 2900
+	14800 2900 16900 2900
 Wire Wire Line
-	14800 2700 16350 2700
+	14800 2700 16900 2700
 Wire Wire Line
-	14800 2500 16200 2500
+	14800 2500 16900 2500
 Wire Wire Line
-	14800 2400 16050 2400
+	14800 2400 16900 2400
 Wire Wire Line
-	14800 2300 15900 2300
+	14800 2300 16900 2300
 Wire Wire Line
-	2900 3100 3050 3100
+	2900 3100 3450 3100
 Wire Wire Line
 	3050 3100 3050 3500
 Wire Wire Line
@@ -1539,7 +1568,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 3000 3450 3000
 Wire Wire Line
-	2400 1800 2700 1800
+	2400 1800 3450 1800
 Wire Wire Line
 	2700 1800 2700 1600
 Wire Wire Line
@@ -1548,7 +1577,7 @@ Wire Wire Line
 	3350 1900 3350 1800
 Connection ~ 3350 1800
 Wire Wire Line
-	3200 2000 3350 2000
+	3200 2000 3450 2000
 Wire Wire Line
 	3450 2100 3350 2100
 Wire Wire Line
@@ -1563,11 +1592,11 @@ Wire Wire Line
 Wire Wire Line
 	9200 2700 8250 2700
 Wire Wire Line
-	8250 2700 8250 3000
+	8250 2700 8250 3500
 Wire Wire Line
 	9200 2900 8750 2900
 Wire Wire Line
-	8750 2900 8750 3000
+	8750 2900 8750 3500
 Wire Wire Line
 	8600 3350 8750 3350
 Connection ~ 8750 3350
@@ -1579,18 +1608,18 @@ Wire Wire Line
 Wire Wire Line
 	2500 9000 2600 9000
 Wire Wire Line
-	2500 11400 2500 11500
+	2500 11400 2500 11600
 Wire Wire Line
 	2650 11600 2650 11500
 Wire Wire Line
-	2500 11500 2650 11500
+	2500 11500 2800 11500
 Connection ~ 2500 11500
 Wire Wire Line
 	3450 3900 2950 3900
 Wire Wire Line
 	3450 4000 2950 4000
 Wire Wire Line
-	5850 3700 5950 3700
+	5850 3700 6450 3700
 Wire Wire Line
 	6350 3700 6350 3600
 Wire Wire Line
@@ -1611,16 +1640,16 @@ Wire Wire Line
 Wire Wire Line
 	1500 3600 1500 3700
 Wire Wire Line
-	1900 3600 2100 3600
+	1900 3600 3450 3600
 Wire Wire Line
 	2100 3050 2100 3150
 Wire Wire Line
-	2100 3450 2100 3600
+	2100 3450 2100 3700
 Connection ~ 2100 3600
 Wire Wire Line
 	9050 2800 9200 2800
 Wire Wire Line
-	8250 3850 8750 3850
+	8250 3850 8850 3850
 Wire Wire Line
 	8250 3850 8250 3700
 Wire Wire Line
@@ -1633,7 +1662,7 @@ Wire Wire Line
 	8350 3000 8250 3000
 Connection ~ 8250 3000
 Wire Wire Line
-	7300 11850 7300 12350
+	7300 11850 7300 15950
 Wire Wire Line
 	7300 15850 7200 15850
 Wire Wire Line
@@ -1646,7 +1675,7 @@ Wire Wire Line
 	7200 11850 7300 11850
 Connection ~ 7300 12350
 Wire Wire Line
-	5700 11950 5700 12050
+	5700 11950 5700 15950
 Wire Wire Line
 	5700 15850 5800 15850
 Wire Wire Line
@@ -1684,7 +1713,7 @@ Wire Wire Line
 	15200 3750 15200 3850
 Connection ~ 2800 12300
 Wire Wire Line
-	2700 12300 2800 12300
+	2700 12300 3050 12300
 Wire Wire Line
 	16800 5600 17050 5600
 Wire Wire Line
@@ -1732,9 +1761,9 @@ Wire Wire Line
 	16600 9050 16700 9050
 Connection ~ 16700 9350
 Wire Wire Line
-	16700 9050 16700 9350
+	16700 9050 16700 10350
 Wire Wire Line
-	5850 4000 5950 4000
+	5850 4000 6450 4000
 Wire Wire Line
 	2400 1800 2400 1650
 Connection ~ 2700 1800
@@ -1749,9 +1778,9 @@ Connection ~ 6350 3700
 Wire Wire Line
 	6450 4300 6350 4300
 Wire Wire Line
-	2150 12100 2500 12100
+	2150 12100 3050 12100
 Wire Wire Line
-	2150 12200 2650 12200
+	2150 12200 3050 12200
 Wire Wire Line
 	2800 11500 2800 11600
 Connection ~ 2650 11500
@@ -1766,12 +1795,14 @@ Wire Wire Line
 Wire Wire Line
 	3950 12300 3950 12500
 Wire Wire Line
-	4200 11950 4200 12100
+	4200 11950 4200 12200
 Connection ~ 4200 12100
 Wire Wire Line
 	4200 12400 4200 12500
 Wire Wire Line
 	3850 12100 4200 12100
+Wire Wire Line
+	2400 4600 2400 4600
 Wire Wire Line
 	2400 4600 2400 3600
 Connection ~ 2400 3600
@@ -1783,7 +1814,7 @@ Connection ~ 3050 3100
 Wire Wire Line
 	1450 4600 1050 4600
 Wire Wire Line
-	1050 4500 1200 4500
+	1050 4500 1450 4500
 Wire Wire Line
 	1200 4650 1200 4500
 Connection ~ 1200 4500
@@ -1795,20 +1826,20 @@ Wire Wire Line
 	6300 4100 6300 4000
 Connection ~ 6300 4000
 Wire Wire Line
-	5550 8850 6100 8850
+	5550 8850 6200 8850
 Wire Wire Line
 	2500 9100 2600 9100
 Wire Wire Line
 	7100 8600 7500 8600
 Wire Wire Line
-	7500 8600 7500 8850
+	7500 8600 7500 8900
 Connection ~ 7500 8850
 Wire Wire Line
 	7100 9050 7250 9050
 Wire Wire Line
 	7250 9050 7250 9150
 Wire Wire Line
-	7100 8850 7500 8850
+	7100 8850 8550 8850
 Wire Wire Line
 	8100 8900 8100 8850
 Connection ~ 8100 8850
@@ -1823,13 +1854,13 @@ Connection ~ 6100 8850
 Wire Wire Line
 	6100 9500 6100 9350
 Wire Wire Line
-	5750 9050 5900 9050
+	5750 9050 6200 9050
 Wire Wire Line
 	7500 9150 7500 9100
 Wire Wire Line
-	14950 2600 15200 2600
+	14950 2600 16900 2600
 Wire Wire Line
-	14950 2150 14950 2600
+	14950 2150 14950 3550
 Connection ~ 14950 2600
 Wire Wire Line
 	15200 3550 15200 2600
@@ -1837,9 +1868,9 @@ Connection ~ 15200 2600
 Wire Wire Line
 	16900 2800 15450 2800
 Wire Wire Line
-	15450 2800 15450 3300
+	15450 2800 15450 3850
 Wire Wire Line
-	14800 3200 16800 3200
+	14800 3200 16900 3200
 Wire Wire Line
 	16900 3300 15450 3300
 Connection ~ 15450 3300
@@ -1869,11 +1900,11 @@ Wire Wire Line
 	16800 2100 16800 3200
 Connection ~ 16800 3200
 Wire Wire Line
-	15900 1650 15900 1700
+	15900 1650 15900 1800
 Wire Wire Line
 	16050 1800 16050 1700
 Wire Wire Line
-	15900 1700 16050 1700
+	15900 1700 16800 1700
 Connection ~ 15900 1700
 Wire Wire Line
 	16200 1700 16200 1800
@@ -1993,11 +2024,11 @@ Wire Wire Line
 Wire Wire Line
 	4600 5400 4600 5100
 Wire Wire Line
-	4300 4500 4300 4600
+	4300 4500 4300 4700
 Wire Wire Line
 	4400 4700 4400 4600
 Wire Wire Line
-	4300 4600 4400 4600
+	4300 4600 4600 4600
 Connection ~ 4300 4600
 Wire Wire Line
 	4500 4600 4500 4700
@@ -2006,11 +2037,11 @@ Wire Wire Line
 	4600 4600 4600 4700
 Connection ~ 4500 4600
 Wire Wire Line
-	3800 7600 3800 7700
+	3800 7600 3800 7800
 Wire Wire Line
 	3900 7600 3900 7700
 Wire Wire Line
-	3800 7700 3900 7700
+	3800 7700 4100 7700
 Connection ~ 3800 7700
 Wire Wire Line
 	4000 7700 4000 7600
@@ -2019,11 +2050,11 @@ Wire Wire Line
 	4100 7700 4100 7600
 Connection ~ 4000 7700
 Wire Wire Line
-	4850 7600 4850 7700
+	4850 7600 4850 7800
 Wire Wire Line
 	4950 7600 4950 7700
 Wire Wire Line
-	4850 7700 4950 7700
+	4850 7700 5150 7700
 Connection ~ 4850 7700
 Wire Wire Line
 	5050 7700 5050 7600
@@ -2032,11 +2063,11 @@ Wire Wire Line
 	5150 7700 5150 7600
 Connection ~ 5050 7700
 Wire Wire Line
-	5450 7600 5450 7700
+	5450 7600 5450 7800
 Wire Wire Line
 	5550 7600 5550 7700
 Wire Wire Line
-	5450 7700 5550 7700
+	5450 7700 5750 7700
 Connection ~ 5450 7700
 Wire Wire Line
 	5650 7700 5650 7600
@@ -2045,7 +2076,7 @@ Wire Wire Line
 	5750 7700 5750 7600
 Connection ~ 5650 7700
 Wire Wire Line
-	3200 2200 3350 2200
+	3200 2200 3450 2200
 Wire Wire Line
 	3450 2300 3350 2300
 Wire Wire Line
@@ -2070,7 +2101,7 @@ TS
 Wire Wire Line
 	2250 2150 2400 2150
 $Comp
-L power:GND #PWR042
+L GND #PWR042
 U 1 1 589C02FE
 P 2400 2350
 F 0 "#PWR042" H 2400 2100 50  0001 C CNN
@@ -2085,7 +2116,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 2250 2400 2350
 $Comp
-L power:GND #PWR043
+L GND #PWR043
 U 1 1 589CA027
 P 9800 11250
 F 0 "#PWR043" H 9800 11000 50  0001 C CNN
@@ -2096,7 +2127,7 @@ F 3 "" H 9800 11250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR044
+L GND #PWR044
 U 1 1 589CA10D
 P 9800 9900
 F 0 "#PWR044" H 9800 9650 50  0001 C CNN
@@ -2107,7 +2138,7 @@ F 3 "" H 9800 9900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:USB_OTG-RESCUE-pocketbone-kicad P1
+L USB_OTG-RESCUE-pocketbone-kicad P1
 U 1 1 58A2CCA0
 P 9700 9500
 F 0 "P1" H 10025 9375 50  0000 C CNN
@@ -2118,7 +2149,7 @@ F 3 "" V 9650 9400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocketbone-kicad-rescue:USB_OTG-RESCUE-pocketbone-kicad P2
+L USB_OTG-RESCUE-pocketbone-kicad P2
 U 1 1 58A2DE0A
 P 9700 10850
 F 0 "P2" H 10025 10725 50  0000 C CNN
@@ -2128,154 +2159,4 @@ F 3 "" V 9650 10750 50  0000 C CNN
 	1    9700 10850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8450 8850 8550 8850
-Wire Wire Line
-	8100 10200 8450 10200
-Wire Wire Line
-	8450 10200 8550 10200
-Wire Wire Line
-	13250 10100 13350 10100
-Wire Wire Line
-	3350 1800 3450 1800
-Wire Wire Line
-	3350 2000 3450 2000
-Wire Wire Line
-	8750 3350 8750 3500
-Wire Wire Line
-	8250 3350 8250 3500
-Wire Wire Line
-	2500 11500 2500 11600
-Wire Wire Line
-	5950 3700 6350 3700
-Wire Wire Line
-	2100 3600 2400 3600
-Wire Wire Line
-	2100 3600 2100 3700
-Wire Wire Line
-	8750 3850 8850 3850
-Wire Wire Line
-	8750 3000 8750 3350
-Wire Wire Line
-	8250 3000 8250 3350
-Wire Wire Line
-	7300 15850 7300 15950
-Wire Wire Line
-	7300 14050 7300 15850
-Wire Wire Line
-	7300 12350 7300 14050
-Wire Wire Line
-	5700 15850 5700 15950
-Wire Wire Line
-	5700 15350 5700 15850
-Wire Wire Line
-	5700 14450 5700 15350
-Wire Wire Line
-	5700 13650 5700 14450
-Wire Wire Line
-	5700 13550 5700 13650
-Wire Wire Line
-	5700 13350 5700 13550
-Wire Wire Line
-	5700 12050 5700 13350
-Wire Wire Line
-	2800 12300 3050 12300
-Wire Wire Line
-	16700 10250 16700 10350
-Wire Wire Line
-	16700 9950 16700 10250
-Wire Wire Line
-	16700 9650 16700 9950
-Wire Wire Line
-	16700 9350 16700 9650
-Wire Wire Line
-	2700 1800 3350 1800
-Wire Wire Line
-	5950 4000 6300 4000
-Wire Wire Line
-	6350 3700 6450 3700
-Wire Wire Line
-	2650 11500 2800 11500
-Wire Wire Line
-	2650 12200 3050 12200
-Wire Wire Line
-	2500 12100 3050 12100
-Wire Wire Line
-	4200 12100 4200 12200
-Wire Wire Line
-	2400 3600 3450 3600
-Wire Wire Line
-	3050 3100 3450 3100
-Wire Wire Line
-	1200 4500 1450 4500
-Wire Wire Line
-	6300 4000 6450 4000
-Wire Wire Line
-	7500 8850 7500 8900
-Wire Wire Line
-	7500 8850 8100 8850
-Wire Wire Line
-	8100 8850 8450 8850
-Wire Wire Line
-	5900 9050 6200 9050
-Wire Wire Line
-	6100 8850 6200 8850
-Wire Wire Line
-	14950 2600 14950 3550
-Wire Wire Line
-	15200 2600 16900 2600
-Wire Wire Line
-	15450 3300 15450 3850
-Wire Wire Line
-	15900 2300 16900 2300
-Wire Wire Line
-	16050 2400 16900 2400
-Wire Wire Line
-	16200 2500 16900 2500
-Wire Wire Line
-	16350 2700 16900 2700
-Wire Wire Line
-	16500 2900 16900 2900
-Wire Wire Line
-	16650 3000 16900 3000
-Wire Wire Line
-	16800 3200 16900 3200
-Wire Wire Line
-	15900 1700 15900 1800
-Wire Wire Line
-	16050 1700 16200 1700
-Wire Wire Line
-	16200 1700 16350 1700
-Wire Wire Line
-	16350 1700 16500 1700
-Wire Wire Line
-	16500 1700 16650 1700
-Wire Wire Line
-	16650 1700 16800 1700
-Wire Wire Line
-	4300 4600 4300 4700
-Wire Wire Line
-	4400 4600 4500 4600
-Wire Wire Line
-	4500 4600 4600 4600
-Wire Wire Line
-	3800 7700 3800 7800
-Wire Wire Line
-	3900 7700 4000 7700
-Wire Wire Line
-	4000 7700 4100 7700
-Wire Wire Line
-	4850 7700 4850 7800
-Wire Wire Line
-	4950 7700 5050 7700
-Wire Wire Line
-	5050 7700 5150 7700
-Wire Wire Line
-	5450 7700 5450 7800
-Wire Wire Line
-	5550 7700 5650 7700
-Wire Wire Line
-	5650 7700 5750 7700
-Wire Wire Line
-	3350 2200 3450 2200
 $EndSCHEMATC
